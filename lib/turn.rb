@@ -41,3 +41,7 @@ def on_board?(index)
   end
   end
 end
+
+def turn(board)
+  puts "Please enter 1-9:"
+end  
