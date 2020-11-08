@@ -21,7 +21,7 @@ def input_to_index(user_input)
     new_user_input -= 1
     return new_user_input
   end
-  
+
 def on_board?(index)
     if index.between?(0,8) == true
       return true
