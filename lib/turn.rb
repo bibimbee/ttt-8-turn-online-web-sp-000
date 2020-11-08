@@ -6,7 +6,7 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
   board = [" "," "," "," "," "," "," "," "," "]
-  
+
   def valid_move?(board,index)
   def position_taken?(board, index)
     if board[index] == " " || board[index] == "" || board[index] == nil
