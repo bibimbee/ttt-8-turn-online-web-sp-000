@@ -6,28 +6,28 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
   board = [" "," "," "," "," "," "," "," "," "]
-end
-
-def valid_move?(board,index)
-def position_taken?(board, index)
-  if board[index] == " " || board[index] == "" || board[index] == nil
-    return false
-  else
-    return true
+  
+  def valid_move?(board,index)
+  def position_taken?(board, index)
+    if board[index] == " " || board[index] == "" || board[index] == nil
+      return false
+    else
+      return true
+    end
   end
-end
 
-def on_board?(index)
-  if index.between?(0,8) == true
+  def on_board?(index)
+    if index.between?(0,8) == true
+      return true
+    else
+      return false
+    end
+  end
+
+  if (position_taken?(board,index)) == false && (on_board?(index)) == true
     return true
   else
     return false
   end
-end
-
-if (position_taken?(board,index)) == false && (on_board?(index)) == true
-  return true
-else
-  return false
-end
+  end
 end
