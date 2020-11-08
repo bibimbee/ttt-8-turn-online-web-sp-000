@@ -7,7 +7,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
   board = [" "," "," "," "," "," "," "," "," "]
 
-  def valid_move?(board,index)
+def valid_move?(board,index)
   def position_taken?(board, index)
     if board[index] == " " || board[index] == "" || board[index] == nil
       return false
@@ -16,7 +16,7 @@ def display_board(board)
     end
   end
 
-  def on_board?(index)
+def on_board?(index)
     if index.between?(0,8) == true
       return true
     else
